@@ -19,7 +19,7 @@
         grid-template-areas:
           'header nav nav nav'
           'hero hero hero hero'
-          'main main empty aside'
+          'main main . aside'
           'footer footer footer footer';
         text-align: center;
         font-size: x-large;
@@ -48,16 +48,12 @@
       nav,
       .hero,
       main,
-      .empty,
       .image,
       .extra,
       footer {
         display: flex;
         justify-content: center;
         align-items: center;
-      }
-      .empty {
-        grid-area: empty;
       }
       aside {
         grid-area: aside;
@@ -85,7 +81,6 @@
     <nav>MENU</nav>
     <section class="hero">HERO</section>
     <main>MAIN</main>
-    <div class="empty"></div>
     <aside>
       <section class="image">IMAGE</section>
       <section class="extra">EXTRA</section>
